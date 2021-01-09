@@ -1,2 +1,5 @@
-file_name = input('Input the name of file: ')
-print(file_name)
+file_name = input('Input the name of the file: ')
+f = open(file_name, 'w')
+text = input(f"Enter the text which you want to add in {file_name}:")
+f.write(text)
+f.close()
